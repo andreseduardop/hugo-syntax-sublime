@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+name: 'Markdown with Go'
+scope: text.html.markdown.go
+hidden: true
+
+# ADEVERTENCIA !!
+# La función extends sólo funciona a partirl del Build 4075
+# https://www.sublimetext.com/docs/syntax.html > Header > extends 
+
+# éste código me fue sugerido por @deathaxe, en:
+# https://github.com/sublimehq/sublime_text/issues/4061
+extends: Packages/Markdown/Markdown.sublime-syntax
+
+file_extensions:
+  - md
+
+contexts:
+  prototype:
+    - meta_prepend: true
+    - match: '{{'
+      scope: punctuation.section.embedding.begin.md
+      embed_scope: source.gotemplate.embedding.md
+      embed: Packages/Go/Go.sublime-syntax
+      escape: '}}'
+      escape_captures:
+        0: punctuation.section.embedding.end.md

@@ -1,0 +1,19 @@
+%YAML 1.2
+---
+name: 'HTML Hugo'
+file_extensions:
+  - html
+scope: text.html.hugo
+contexts:
+  main:
+    - match: ''
+      push: 'Packages/HTML/HTML.sublime-syntax'
+      with_prototype:
+        - match: '(?:({{-|{{))'
+          embed_scope: source.gotemplate
+          captures:
+            0: punctuation.section.embedded.begin.gotemplate
+          embed: 'Packages/Go/Go.sublime-syntax'
+          escape: '(?:(-}}|}}))'
+          escape_captures:
+            0: punctuation.section.embedded.end.gotemplate
