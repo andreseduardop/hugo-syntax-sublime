@@ -4,12 +4,13 @@ name: 'Markdown with Go'
 scope: text.html.markdown.go
 hidden: true
 
-# ADEVERTENCIA !!
-# La función extends sólo funciona a partirl del Build 4075
-# https://www.sublimetext.com/docs/syntax.html > Header > extends 
+# WARNING !!
+# The `extends` function only works from Build 4075.
+# https://www.sublimetext.com/docs/syntax.html> Header> extends
 
-# éste código me fue sugerido por @deathaxe, en:
+# This code was suggested by @deathaxe, in:
 # https://github.com/sublimehq/sublime_text/issues/4061
+# To enable it, change the 'hidden' parameter to: true
 extends: Packages/Markdown/Markdown.sublime-syntax
 
 file_extensions:
