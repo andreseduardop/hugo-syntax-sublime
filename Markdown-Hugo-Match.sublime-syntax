@@ -17,12 +17,16 @@ file_extensions:
   - md
 
 contexts:
-  prototype:
-    - meta_prepend: true
-    - match: '{{'
-      scope: punctuation.section.embedding.begin.md
-      embed_scope: source.gotemplate.embedding.md
-      embed: Packages/Go/Go.sublime-syntax
-      escape: '}}'
+  main:
+    - match: '---'
+      embed_scope: source.yaml.hugo
+      embed: 'Packages/YAML/YAML.sublime-syntax'
+      escape: '---'
+    - match: '(?=(\s*\S*\n*))(?:({{-|{{))'
+      embed_scope: source.gotemplate
+      captures:
+        0: punctuation.section.embedded.begin.gotemplate
+      embed: 'Packages/Go/Go.sublime-syntax'
+      escape: '(?:(-}}|}}))'
       escape_captures:
-        0: punctuation.section.embedding.end.md
+        0: punctuation.section.embedded.end.gotemplate
