@@ -20,9 +20,9 @@ contexts:
   prototype:
     - meta_prepend: true
     - match: '{{'
-      scope: punctuation.section.embedding.begin.md
+      scope: punctuation.section.embedded.begin.gotemplate
       embed_scope: source.gotemplate.embedding.md
       embed: Packages/Go/Go.sublime-syntax
       escape: '}}'
       escape_captures:
-        0: punctuation.section.embedding.end.md
+        0: punctuation.section.embedded.end.gotemplate
