@@ -124,7 +124,7 @@
     },
     {
       "name": "Punctuation Dot",
-      "scope": "punctuation.accessor.dot",
+      "scope": "punctuation.accessor",
       "foreground": "var(hugo-dot)"
     },
     {
