@@ -216,7 +216,7 @@
     {
       "name": "Variables",
       "scope": "entity.name.val.declaration,entity.name.variable,meta.definition.variable,meta.interpolation,storage.type.variable,support.type.custom-property,support.type.variable-name,variable,variable.interpolation variable,variable.other.interpolation variable,variable.parameter.dosbatch,variable.parameter.output.function.matlab,variable.parameter.sass",
-      "foreground": "var(blue)"
+      "foreground": "var(orange)"
     },
     {
       "name": "Variable - Punctuation",
@@ -225,8 +225,8 @@
     },
     {
       "name": "Function Declaration - Punctuation",
-      "scope": "entity.name.function punctuation.dollar",
-      "foreground": "var(green1)"
+      "scope": "entity.name.function punctuation.dollar,punctuation.section.group",
+      "foreground": "var(orange1)"
     },
     {
       "name": "Object Properties",
@@ -483,8 +483,8 @@
     {
       "name": "Entities",
       "scope": "entity.name,entity.name.accessor,entity.name.function,entity.name.label,entity.name.section,variable.other.member.declaration",
-      "foreground": "var(fg0)",
-      // "font_style": "bold"
+      "foreground": "var(green2)",
+      "font_style": "bold"
     },
     {
       "name": "Modules",
@@ -571,7 +571,7 @@
     {
       "name": "Function Call Braces",
       "scope": "constant.name.attribute.tag.jade,constant.name.attribute.tag.pug,meta.block.parameters punctuation.definition.parameters,meta.function-call meta.group punctuation.definition.group,meta.function-call meta.group punctuation.section.group",
-      "foreground": "var(fg3)"
+      "foreground": "var(orange1)"
     },
     {
       "name": "CSS Property Names",
