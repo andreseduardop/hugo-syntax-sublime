@@ -451,6 +451,11 @@
       "foreground": "var(red1)"
     },
     {
+      "name": "Markdown List Punctuation",
+      "scope": "markup.list.numbered.bullet",
+      "foreground": "var(red)"
+    },
+    {
       "name": "Markdown Separators",
       "scope": "meta.separator.markdown",
       "foreground": "var(gray)"
@@ -860,6 +865,11 @@
       "scope": "meta.punctuation.archive.todo,meta.punctuation.separator.todo",
       "font_style": "italic",
       "foreground": "var(gray)"
-    }
+    },
+    {
+      "name": "General Punctuation",
+      "scope": "punctuation.definition",
+      "foreground": "var(red)"
+    },
   ]
 }
