@@ -170,6 +170,11 @@
       "foreground": "var(red)"
     },
     {
+      "name": "Keywords Flow",
+      "scope": "keyword.control.flow",
+      "foreground": "var(green2)"
+    },
+    {
       "name": "Keywords Punctuation",
       "scope": "keyword punctuation",
       "foreground": "var(red1)"
@@ -443,7 +448,7 @@
     {
       "name": "Markdown List",
       "scope": "markup.list",
-      "foreground": "var(fg4)"
+      "foreground": "var(aqua1)"
     },
     {
       "name": "Markdown List Punctuation",
