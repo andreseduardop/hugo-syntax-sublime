@@ -876,5 +876,15 @@
       "scope": "punctuation.definition",
       "foreground": "var(red)"
     },
+    {
+      "name": "General Punctuation Separator",
+      "scope": "punctuation.separator",
+      "foreground": "var(red)"
+    },
+    {
+      "name": "General Punctuation terminator",
+      "scope": "punctuation.terminator.statement",
+      "foreground": "var(aqua)"
+    }
   ]
 }
