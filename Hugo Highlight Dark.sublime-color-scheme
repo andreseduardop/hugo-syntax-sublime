@@ -331,6 +331,11 @@
       "foreground": "var(fg)"
     },
     {
+      "name": "Javascript Map Value String",
+      "scope": "string.quoted.double.js",
+      "foreground": "var(fg4)"
+    },
+    {
       "name": "Regular Expressions Text",
       "scope": "source.regexp,string.regexp",
       "foreground": "var(green)"

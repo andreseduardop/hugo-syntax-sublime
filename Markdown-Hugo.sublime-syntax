@@ -2,6 +2,7 @@
 ---
 name: 'Markdown with Go'
 scope: text.html.markdown.go
+version: 2
 hidden: false
 
 # WARNING !!
