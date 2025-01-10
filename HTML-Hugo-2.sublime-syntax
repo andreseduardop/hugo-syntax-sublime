@@ -3,7 +3,7 @@
 name: 'HTML with Go'
 scope: text.html.hugo
 version: 2
-hidden: false
+hidden: true
 
 # WARNING !!
 # The `extends` function only works from Build 4075.
