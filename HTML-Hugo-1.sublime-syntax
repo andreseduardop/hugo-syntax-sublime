@@ -2,6 +2,8 @@
 ---
 name: 'HTML Hugo'
 scope: text.html.hugo
+version: 1
+hidden: true
 file_extensions:
   - html
 contexts:

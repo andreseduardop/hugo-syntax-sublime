@@ -1,0 +1,29 @@
+%YAML 1.2
+---
+name: 'HTML with Go'
+scope: text.html.hugo
+version: 2
+hidden: false
+
+# WARNING !!
+# The `extends` function only works from Build 4075.
+# https://www.sublimetext.com/docs/syntax.html> Header> extends
+
+# This code was suggested by @deathaxe, in:
+# https://github.com/sublimehq/sublime_text/issues/4061
+# To enable it, change the 'hidden' parameter to: true
+extends: Packages/HTML/HTML.sublime-syntax
+
+file_extensions:
+  - html
+
+contexts:
+  prototype:
+    - meta_prepend: true
+    - match: '{{'
+      scope: punctuation.section.embedded.begin.gotemplate
+      embed_scope: source.gotemplate.embedding.html
+      embed: Packages/Go/Go.sublime-syntax
+      escape: '}}'
+      escape_captures:
+        0: punctuation.section.embedded.end.gotemplate
